@@ -1,0 +1,21 @@
+<!-- This is a minimal skeleton. Need to flesh out the styling. -->
+<!-- The id is used in selectors, so don't change it. -->
+<div id="optimizely-extension-{{ extension.$instance }}" class="optly-recos-extension">
+    <h3>{{ extension.header }}</h3>
+    <div>
+  
+      {{#recos}}
+      <div>
+        <!-- The class "reco-link" is used in selectors, so don't remove it. -->
+        <a href="{{ url }}" class="reco-link">
+          <meta itemprop="id" content="{{ id }}">
+          <!-- <img src="{{ image }}"> -->
+          <p>{{ name }}</p>
+          <p>{{ price }}</p>
+        </a>
+      </div>
+      {{/recos}}
+  
+    </div>
+  </div>
+  
